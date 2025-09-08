@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
@@ -14,16 +14,15 @@ import {
   Users, 
   Store, 
   ShoppingBag, 
-  TrendingUp, 
+ 
   Plus,
   Edit,
   Trash2,
   Eye,
   UserCheck,
   UserX,
-  Upload,
+  
   DollarSign,
-  Clock,
   Star,
   MapPin
 } from 'lucide-react';
@@ -38,7 +37,7 @@ export function AdminDashboard({ admin, onLogout }: AdminDashboardProps) {
   const [isAddFoodOpen, setIsAddFoodOpen] = useState(false);
 
   // Mock data
-  const [foods, setFoods] = useState([
+  const [foods] = useState([
     {
       id: '1',
       name: 'Margherita Pizza',
@@ -110,7 +109,7 @@ export function AdminDashboard({ admin, onLogout }: AdminDashboardProps) {
     }
   ]);
 
-  const [customers, setCustomers] = useState([
+  const [customers] = useState([
     {
       id: '1',
       name: 'John Doe',
@@ -143,7 +142,7 @@ export function AdminDashboard({ admin, onLogout }: AdminDashboardProps) {
     }
   ]);
 
-  const [orders, setOrders] = useState([
+  const [orders] = useState([
     {
       id: '#ORD-001',
       customer: 'John Doe',
